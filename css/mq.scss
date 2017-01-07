@@ -1,0 +1,173 @@
+@media (max-width: 480px) {
+  .layout {
+    width: auto;
+    padding: 0px;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .feed, .sidebar {
+    width: auto;
+    padding: 20px;
+    //font-size: 1.1rem;
+    //line-height: 1.8rem;
+  }
+
+  .logo-container {
+    padding: 0 20px;
+  }
+
+  .logo__box {
+    left: 10px;
+    top: 8px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .site__name, .site__name--red {
+    font-size: 26px;
+  }
+
+ .site__name-description{
+   font-size: 10px;
+   right: 59px;
+   bottom: 12px; 
+ }
+  .search-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    right: 10px;
+    transition: 0.5s all ease;
+  }
+
+  .top-nav {
+    //display: none;
+    //height: 0;
+    width: auto;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  .main-menu__item {
+    display: block;
+    background: $blue;
+  }
+
+  .main-menu__link {
+    border-bottom: none;
+    color: $white;
+    
+    &:active {
+     background: darken($blue, 10%); 
+    }
+  }
+
+  .content {
+    margin-top: 0;
+  }
+
+  .post-image {
+    padding: 0;
+  }  
+
+  .post__title {
+    line-height: 27px;
+    font-size: 23px;
+  }
+
+  .post__preview-text{
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .read__more{
+    width: auto;
+    position: relative;
+  }
+
+  .footer-block {
+    padding: 10px;
+  }
+
+  .social__title {
+    text-align: left;
+  }
+
+  .mq-bg {
+    background: darken($blue, 10%);
+  }
+  //media-query modificator
+
+  .close {
+    background: url("../img/close.svg") no-repeat 50%;
+    transition: 0.5s all ease;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .height-none {
+    max-height: 0;
+    z-index: -9999;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .layout {
+    width: auto;
+    padding: 0px;
+  }  
+  
+  .flex {
+    display: block;
+    width: auto;
+  }
+
+  .feed, .sidebar {
+    width: auto;
+    padding: 20px;
+  }
+
+  .logo-container {
+    padding: 0 20px;
+  }
+
+  .site__name, .site__name--red {
+    font-size: 26px;
+  }
+
+  .site__name-description{
+   font-size: 10px;
+   right: 50px;
+   bottom: 7px; 
+ }
+
+  .search-container {
+    right: 20px;
+  }
+
+  .main-menu__link {
+    font-size: 18px;
+  }
+
+  .footer-block {
+    padding: 10px;
+  }
+
+  .social__title {
+    text-align: left;
+  }
+
+  .mq-bg {
+    background: darken($blue, 10%);
+  }
+
+}

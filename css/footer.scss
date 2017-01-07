@@ -1,0 +1,72 @@
+footer {
+  background: $blue;
+}
+.footer-block {
+  position: relative;
+  padding: 20px 0;
+  min-height: 80px;
+  color: $white;
+  font-size: 13px;
+}
+
+.footer-block a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-block--middle {
+  max-width: 400px;
+}
+
+.footer-menu {
+  list-style: none;
+}
+
+.footer-menu__item {
+  padding: 2px 0;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: $white;
+  font-size: 13px;
+}
+
+.social__title {
+  display: block;
+  text-align: center;
+}
+
+.social__btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  margin: 0 5px;
+}
+
+.vk {
+  background: url("../img/vk.svg") no-repeat 50%;
+}
+.fb {
+  background: url("../img/fb.svg") no-repeat 50%;
+}
+.tw {
+  background: url("../img/tw.svg") no-repeat 50%;
+}
+.inst {
+  background: url("../img/inst.svg") no-repeat 50%;
+}
+
+.feedback {
+  position: absolute;
+  bottom: 10px;
+}
+
+.feedback__link {
+  margin-right: 10px;
+}
