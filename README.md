@@ -1,2 +1,2 @@
 # tricolor
-tricolor info portal
+create tricolor info portal
