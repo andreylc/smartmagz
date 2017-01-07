@@ -9,27 +9,27 @@
   font-weight: 400;
 }
 
-@keyframes load {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes load {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 
-.loading {
-  margin: 20px auto;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border-top: 5px solid #DF2E22;
-  border-right: 5px solid #DF2E22;
-  border-bottom: 5px solid #DF2E22;
-  border-left: 5px solid transparent;
-  animation-name: load;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+// .loading {
+//   margin: 20px auto;
+//   width: 35px;
+//   height: 35px;
+//   border-radius: 50%;
+//   border-top: 5px solid #DF2E22;
+//   border-right: 5px solid #DF2E22;
+//   border-bottom: 5px solid #DF2E22;
+//   border-left: 5px solid transparent;
+//   animation-name: load;
+//   animation-duration: 0.5s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+// }
 
