@@ -400,7 +400,7 @@ footer {
     max-height: 0;
     z-index: -9999; } }
 
-@media (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .layout {
     width: auto;
     padding: 0px; }
