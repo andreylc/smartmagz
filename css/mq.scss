@@ -73,18 +73,50 @@
     margin-top: 0;
   }
 
+  .post-container {
+    width: auto;
+    border: none;
+    border-bottom: 1px solid $light-grey;
+    margin-right: 0;
+
+    &:hover {
+      cursor: inherit;
+      box-shadow: none;
+    }
+
+    &:hover .post__title {
+      color: #000025;
+    }
+  }
+
   .post-image {
     padding: 0;
   }  
+
+  .post-body {
+    min-height: 150px;
+  }
 
   .post__title {
     line-height: 27px;
     font-size: 23px;
   }
 
+  .meta--show {
+    display: block;
+  }
+
   .post__preview-text{
     line-height: 22px;
     font-size: 14px;
+  }
+
+  .text--show {
+    display: block;
+  }
+
+  .stats--show {
+    display: block;
   }
 
   .read__more{
@@ -126,10 +158,9 @@
     padding: 0px;
   }  
   
-  .flex {
-    display: block;
-    width: auto;
-  }
+  // .flex {
+  
+  // }
 
   .feed, .sidebar {
     width: auto;
@@ -156,6 +187,14 @@
 
   .main-menu__link {
     font-size: 18px;
+  }
+
+  .post-container {
+    width: 210px;
+
+    &:last-of-type {
+      flex-grow: 1;
+    }
   }
 
   .footer-block {
