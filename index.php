@@ -1,5 +1,5 @@
 <?php
-define("INDEX", "main page");
+define("INDEX", "Load main page");
 error_reporting( E_ERROR );
 
   if(file_exists("lib.php")) {

@@ -14,7 +14,7 @@ function load_page($db, $block1, $block2, $block3, $block4){
       include "inc/".$block3.".php";
       include "inc/".$block4.".php";
     } else {  
-        exit("Возникли проблемы при загрузки страницы");
+        exit("Возникли проблемы при загрузке страницы");
       };
    };
 };

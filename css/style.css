@@ -254,7 +254,8 @@ body {
 .post__full-text {
   width: 100%;
   min-height: 300px;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 23px; }
 
 .sidebar {
   width: 250px;

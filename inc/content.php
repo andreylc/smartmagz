@@ -7,9 +7,11 @@
           <main class="feed flex">
             <?php
               if(defined("INDEX")){
-             load_feed($db);
-              }else {
+                load_feed($db);
+              } else if(1) {
                 load_post_body($db);
+              } else {
+                echo "Возникли проблемы при загрузке статьи";
               };
             ?>
           </main>

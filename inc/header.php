@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="ya-title=#03A9F4,ya-dock=#03A9F4">
     <meta name="theme-color" content="#03A9F4">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="Портал создан для помощи абонентам в поиске информации по продукции Триколор ТВ, 
