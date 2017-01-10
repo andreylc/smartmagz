@@ -32,8 +32,8 @@ function load_feed($db){
   mysqli_close();
 };
 
-function load_post_content($db) {
-  $query = "SELECT * FROM `posts` WHERE `id` =".$_GET['id'];
+function load_post_body($db) {
+  $query = "SELECT * FROM `posts` WHERE `id` = ".$_GET['id'];
   $result = mysqli_query($db, $query);
   $row = mysqli_fetch_assoc($result);
   if(file_exists("inc/post_content.php")){

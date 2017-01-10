@@ -166,9 +166,6 @@ body {
   position: relative;
   margin-bottom: 10px; }
 
-.meta--show {
-  display: none; }
-
 .post__time {
   display: inline-block;
   color: #424242;
@@ -215,16 +212,13 @@ body {
   overflow: hidden;
   margin-bottom: 80px; }
 
-.text--show {
-  display: none; }
-
 .post__stats {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 50px; }
 
-.stats--show {
+.elem--hide {
   display: none; }
 
 .read__more {
@@ -244,6 +238,23 @@ body {
     background: #0286c2; }
   .read__more:active {
     bottom: -2px; }
+
+.view-post-container {
+  width: 820px; }
+
+.view-post-image {
+  width: 100%; }
+
+.view-post-body {
+  padding: 15px 20px; }
+
+.view-post--title {
+  font-size: 24px; }
+
+.post__full-text {
+  width: 100%;
+  min-height: 300px;
+  font-size: 16px; }
 
 .sidebar {
   width: 250px;
@@ -369,20 +380,16 @@ footer {
       color: #000025; }
   .post-image {
     padding: 0; }
+  .view-post-container {
+    width: 100%; }
   .post-body {
     min-height: 150px; }
   .post__title {
     line-height: 27px;
     font-size: 23px; }
-  .meta--show {
-    display: block; }
   .post__preview-text {
     line-height: 22px;
     font-size: 14px; }
-  .text--show {
-    display: block; }
-  .stats--show {
-    display: block; }
   .read__more {
     width: auto;
     position: relative; }
@@ -399,7 +406,9 @@ footer {
     display: block; }
   .height-none {
     max-height: 0;
-    z-index: -9999; } }
+    z-index: -9999; }
+  .elem--hide {
+    display: block; } }
 
 @media (min-width: 481px) and (max-width: 800px) {
   .layout {

@@ -70,10 +70,6 @@
   margin-bottom: 10px;
 }
 
-.meta--show {
-  display: none;
-}
-
 .post__time {
   display: inline-block;
   color: $grey;
@@ -108,7 +104,7 @@
     left: -25px;
     width: 18px;
     height: 18px;
-    background: url("../img/folder.svg") no-repeat 50%;;
+    background: url("../img/folder.svg") no-repeat 50%;
   }
 }
 
@@ -129,10 +125,6 @@
   margin-bottom: 80px;
 }
 
-.text--show {
-  display: none;
-}
-
 .post__stats {
   position: absolute;
   bottom: 0;
@@ -141,7 +133,7 @@
   
 }
 
-.stats--show {
+.elem--hide {
   display: none;
 }
 

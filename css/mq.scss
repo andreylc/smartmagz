@@ -91,6 +91,10 @@
 
   .post-image {
     padding: 0;
+  }
+
+  .view-post-container{
+    width: 100%;
   }  
 
   .post-body {
@@ -102,21 +106,9 @@
     font-size: 23px;
   }
 
-  .meta--show {
-    display: block;
-  }
-
   .post__preview-text{
     line-height: 22px;
     font-size: 14px;
-  }
-
-  .text--show {
-    display: block;
-  }
-
-  .stats--show {
-    display: block;
   }
 
   .read__more{
@@ -149,6 +141,10 @@
   .height-none {
     max-height: 0;
     z-index: -9999;
+  }
+
+  .elem--hide {
+    display: block;
   }
 }
 
