@@ -37,7 +37,8 @@ body {
   width: 290px;
   height: 60px;
   position: absolute;
-  top: 0; }
+  top: 0;
+  cursor: pointer; }
 
 .logo {
   display: inline-block;
