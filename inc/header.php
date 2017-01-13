@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#03A9F4">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Портал создан для помощи абонентам в поиске информации по продукции Триколор ТВ, 
       а так же для помощи в настройке оборудования">
     <meta name="keywords" content="триколор, тв, приемник, ресивер, гс, gs, general satellite, настройка, каналы, спутник">

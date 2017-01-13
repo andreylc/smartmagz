@@ -1,6 +1,11 @@
 <?php
 error_reporting( E_ERROR );
-include  "lib.php";
+
+if(file_exists("lib.php")) {
+    include "lib.php";
+  } else {
+    exit("Ошибка при загрузке библиотеки");
+  };
 
 load_page($db, header, content ,aside , footer);
 
