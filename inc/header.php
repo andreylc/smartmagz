@@ -28,7 +28,7 @@
           </div>
           <nav class="top-nav height-none">
             <ul class="main-menu">
-              <li class="main-menu__item"><a class="main-menu__link" href="#1">Обмен</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="cp/login.php">Обмен</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="#2">Поддержка</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="#3">Инструкции</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="#4">Сервис</a></li>

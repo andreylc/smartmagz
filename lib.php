@@ -29,7 +29,7 @@ function load_feed($db){
       include "inc/feed.php";
    }
   while($row = mysqli_fetch_array($result));
-  mysqli_close();
+  mysqli_close($db);
 };
 
 function load_post_body($db) {
@@ -38,6 +38,7 @@ function load_post_body($db) {
   $row = mysqli_fetch_assoc($result);
   if(file_exists("inc/post_content.php")){
     require_once "inc/post_content.php";
+    mysqli_close($db);
   };
 }
 ?>
