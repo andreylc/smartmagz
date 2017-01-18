@@ -1,3 +1,11 @@
+<?php
+$crypt = "qwrqrdsgsdklcjkbkcjbkcf";
+
+if($_COOKIE['a'] != md5($crypt)) {
+  header("Location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
