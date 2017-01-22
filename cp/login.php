@@ -11,7 +11,7 @@ $crypt = "qwrqrdsgsdklcjkbkcjbkcf";
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/cp.css">
     <script src="main.js"></script>
-    <title>Авторизация Control Panel</title>
+    <title>Авторизация</title>
   </head>
   <body>
       <div class="login-container">

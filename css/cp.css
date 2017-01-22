@@ -88,10 +88,10 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1300px;
-  min-height: 300px;
+  width: 90%;
+  min-width: 945px;
   margin: 30px auto;
-  background-color: rgba(255,255,255, 0.1); 
+  padding: 0 10px;
 }
 
 .cp-top-info-block {
@@ -99,8 +99,10 @@ a {
   justify-content: space-between;
   width: 100%;
   padding: 0 20px;
+  margin-bottom: 30px;
   height: 40px;
-  background-color: #ccc;
+  border: 1px solid #03A9F4;
+  background-color: #f5f5f5; 
 }
 
 .auth-user, .ip-user, .logout {
@@ -114,13 +116,33 @@ a {
 
 
 .cp-manage-panel {
-  width: 1000px;
+  width: 78%;
   background-color: #F5F5F5;
   padding: 0 20px 20px; 
+  position: relative;
+  border: 1px solid #03A9F4;
+}
+
+.cp-add-post-btn {
+  display: block;
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #0288D1;
+  color: #0288D1;
+  text-transform: uppercase;
+  font-size: 14px;
+  right: 22px;
+  top: 15px;
+}
+
+.cp-add-post-btn:hover {
+  background-color: #0288D1;
+  color: #ffffff;
 }
 
 .cp-main-menu {
-  width: 220px;
+  border: 1px solid #03A9F4;
+  width: 17%;
   background-color: #F5F5F5;
 }
 
@@ -133,7 +155,7 @@ a {
 .cp-main-menu__link {
   display: block;
   padding: 10px 20px;
-  background-color: #ccc;
+  background-color: #4FC3F7;
   border-bottom: 1px solid #000000;
   transition: 0.2s all ease;
 }
@@ -148,7 +170,7 @@ a {
 }
 
 .cp-post-list tr {
-  background-color: #ccc;
+  background-color: #81D4FA;
 }
 
 .cp-post-list tr:nth-child(2n) {
@@ -163,4 +185,22 @@ a {
 
 .cp-post-list tr:first-child td {
   font-weight: 700;
+}
+
+.add-post-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.add-post-input {
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.add-post-textarea{
+  font-size: 15px;
+  padding: 10px;
 }

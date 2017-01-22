@@ -22,45 +22,30 @@ if($_COOKIE['a'] != md5($crypt)) {
         <a class="logout" href="logout.php">Выход</a>
       </div>
       <div class="cp-manage-panel">
-        <h2>Dashboard</h2>
-        <table class="cp-post-list">
-          <tr>
-            <td>id</td>
-            <td>Дата публикации</td>
-            <td>Изображение</td>
-            <td>Заголовок</td>
-            <td>Категория</td>
-            <td>Превью</td>
-            <td>Содержание</td>
-          </tr>
-<?php
-          include "../lib.php";
-
-            $query = "SELECT * FROM `posts` ORDER BY `post_date` DESC";
-            $result = mysqli_query($db, $query);
-            $row = mysqli_fetch_assoc($result);
-            do
-              {
-                echo '<tr>
-                  <td>'.$row['id'].'</td>
-                  <td>'.$row['post_date'].'</td>
-                  <td>'.$row['img'].'</td>
-                  <td>'.$row['title'].'</td>
-                  <td>'.$row['post_category'].'</td>
-                  <td>'.$row['post_preview'].'</td>
-                  <td>'.$row['full_text'].'</td>
-                </tr>';
-            }
-            while($row = mysqli_fetch_array($result));
-            mysqli_close($db);
-?>
-        </table>
+        <?php
+        define("CP_PAGE","page");
+          switch($_GET['section']){
+            case 'all_post': 
+              include 'all_post.php';
+                break;
+            case 'users_list': 
+              include 'users_list.php';
+                break;
+            case 'settings': 
+              include 'settings.php';
+                break;
+            case 'add_post': 
+              include 'add_post.php';
+                break;                
+            default: include 'all_post.php';
+          }
+        ?>
       </div>
       <div class="cp-main-menu">
         <ul class="cp-main-menu-list">
-          <li class="cp-main-menu__item"><a class="cp-main-menu__link" href="#">Статьи</a></li>
-          <li class="cp-main-menu__item"><a class="cp-main-menu__link" href="#">Пользователи</a></li>
-          <li class="cp-main-menu__item"><a class="cp-main-menu__link" href="#">Настройки</a></li>
+          <li class="cp-main-menu__item"><a class="cp-main-menu__link" href="?section=all_post">Статьи</a></li>
+          <li class="cp-main-menu__item"><a class="cp-main-menu__link" href="?section=users_list">Пользователи</a></li>
+          <li class="cp-main-menu__item"><a class="cp-main-menu__link" href="?section=settings">Настройки</a></li>
         </ul>
       </div>
     </div>
