@@ -105,13 +105,17 @@ a {
   background-color: #f5f5f5; 
 }
 
-.auth-user, .ip-user, .logout {
+.auth-user, .ip-user, .logout, .get-site {
   display: block;
   line-height: 40px;
 }
 
-.logout:hover {
-  text-decoration: underline;
+.logout, .get-site {
+  padding: 0 10px;
+}
+
+.logout:hover, .get-site:hover {
+  background: #03A9F4;
 }
 
 
@@ -127,16 +131,15 @@ a {
   display: block;
   position: absolute;
   padding: 10px;
-  border: 1px solid #0288D1;
-  color: #0288D1;
-  text-transform: uppercase;
+  border: 1px solid #4FC3F7;
+  color: #4FC3F7;
   font-size: 14px;
   right: 22px;
   top: 15px;
 }
 
 .cp-add-post-btn:hover {
-  background-color: #0288D1;
+  background-color: #4FC3F7;
   color: #ffffff;
 }
 
@@ -187,20 +190,53 @@ a {
   font-weight: 700;
 }
 
+.cp-add-post{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-post-title {
+  text-align: center;
+}
+
 .add-post-label {
   display: block;
-  margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .add-post-input {
-  width: 200px;
-  height: 30px;
+  width: 100%;
+  height: 25px;
   font-size: 18px;
   padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid #DADADA;
+  border-radius: 2px;
+  
 }
 
 .add-post-textarea{
+  width: 100%;
+  max-width: 100%;
   font-size: 15px;
   padding: 10px;
+  border: 1px solid #DADADA;
+  margin-bottom: 10px;
+}
+
+.public-post-btn{
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #4FC3F7;
+  color: #4FC3F7;
+  cursor: pointer;
+}
+
+.public-post-btn:hover {
+  background-color: #4FC3F7;
+  color: #ffffff;
+}
+
+.public-post-btn::first-letter {
+  text-transform: uppercase;
 }

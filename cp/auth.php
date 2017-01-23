@@ -12,7 +12,7 @@ $password = htmlspecialchars($password);
 $password = mysql_escape_string($password);
 
 
-require_once "../lib.php";
+require_once "../config.php";
 $crypt = "qwrqrdsgsdklcjkbkcjbkcf";
 
 session_start();

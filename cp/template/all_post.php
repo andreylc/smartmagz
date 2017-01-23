@@ -2,12 +2,12 @@
   if(defined("CP_PAGE")){
     
   } else {
-    header("Location: login.php");
+    header("Location: ../login.php");
   }
 ?>
 
 <h2>Все статьи</h2>
-        <a class="cp-add-post-btn" href="?section=add_post">добавить</a>
+        <a class="cp-add-post-btn" href="?section=add_post">Добавить</a>
         <table class="cp-post-list">
           <tr>
             <td>id</td>
@@ -19,7 +19,7 @@
             <td>Содержание</td>
           </tr>
 <?php
-          include "../lib.php";
+          include "../config.php";
 
             $query = "SELECT * FROM `posts` ORDER BY `id` DESC";
             $result = mysqli_query($db, $query);

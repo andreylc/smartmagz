@@ -1,5 +1,8 @@
 <?php
-require_once "../lib.php";
+ header("Location: manage.php");
+
+
+require_once "../config.php";
 
 $title = trim($_POST['title']);
 $title = strip_tags($title);
@@ -34,9 +37,9 @@ $result = mysqli_query($db, $query);
   // $row = mysqli_fetch_assoc($result);
 
   if($result) {
-    header("Location: manage.php?section=all_post");
+    header("Location: ../manage.php?section=all_post");
   } else {
-    header("Location: manage.php?section=all_post&notice=error");
+    header("Location: ../manage.php?section=all_post&notice=error");
   }
 
 
