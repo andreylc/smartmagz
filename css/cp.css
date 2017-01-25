@@ -18,7 +18,7 @@ a {
 .login-container {
   width: 300px;
   padding: 30px;
-  margin: 300px auto;
+  margin: 20% auto;
   border: 1px solid #9E9E9E;
   font-family: "Arial", sans-serif;
   background-color: #F5F5F5;
@@ -149,11 +149,11 @@ a {
   background-color: #F5F5F5;
 }
 
-.cp-main-menu-list {
+/*.cp-main-menu-list {
 }
 
 .cp-main-menu__item{
-}
+}*/
 
 .cp-main-menu__link {
   display: block;
@@ -167,9 +167,10 @@ a {
 }
 
 .cp-post-list {
-  width: 100;
+  width: 100%;
   border-collapse: collapse;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .cp-post-list tr {
@@ -181,12 +182,12 @@ a {
 }
 
 .cp-post-list tr td {
-  padding: 10px 5px;
+  padding: 5px 5px;
   text-align: center;
   border: 1px solid #e5e5e5;
 }
 
-.cp-post-list tr:first-child td {
+.cp-post-list tr:first-child {
   font-weight: 700;
 }
 

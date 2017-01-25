@@ -8,6 +8,8 @@
       а так же для помощи в настройке оборудования">
     <meta name="keywords" content="триколор, тв, приемник, ресивер, гс, gs, general satellite, настройка, каналы, спутник">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script>
+    <script type="text/javascript">VK.init({apiId: 5840638, onlyWidgets: true});</script>
     <title>Триколор ТВ - Инфо</title>
   </head>
   <body>
@@ -28,12 +30,18 @@
           </div>
           <nav class="top-nav height-none">
             <ul class="main-menu">
-              <li class="main-menu__item"><a class="main-menu__link" href="cp/login.php">Обмен</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#2">Поддержка</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#3">Инструкции</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#4">Сервис</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#4">Помощь</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#4">О нас</a></li>  
+              <li class="main-menu__item"><a class="main-menu__link" href="index.php">Новости</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=instruction">Инструкции</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=recievers">Ресиверы</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=activations">Активация</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=disqus">Обсуждения</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=help">Помощь</a></li>
+              <?php
+                require "cp/handler/variables.php";
+                if($_COOKIE['a'] == md5($crypt)) {
+                  echo '<li class="main-menu__item"><a class="main-menu__link" href="cp/login.php">Manage site</a></li>';
+                }
+              ?>  
             </ul>
           </nav>
         </div>

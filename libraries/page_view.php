@@ -37,3 +37,30 @@ function load_post_body($db) {
   };
 };
 
+function load_single_page() {
+  switch($_GET['page']){
+        case 'instruction': 
+             include 'includes/instruction.php';
+              break;
+        case 'recievers': 
+             include 'includes/recievers.php';
+              break;
+        case 'activations': 
+             include 'includes/activations.php';
+              break;
+        case 'disqus': 
+             include 'includes/disqus.php';
+              break;
+        case 'help': 
+             include 'includes/help.php';
+              break;
+        case 'feedback': 
+             include 'includes/feedback.php';
+              break;
+        case 'about': 
+             include 'includes/about.php';
+              break;                             
+        default: include 'index.php';
+  }
+}
+

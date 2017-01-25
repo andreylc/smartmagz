@@ -1,5 +1,5 @@
 <?php
-$crypt = "qwrqrdsgsdklcjkbkcjbkcf";
+require "handler/variables.php";
 
 session_start();
 $log_user = $_SESSION['user'];

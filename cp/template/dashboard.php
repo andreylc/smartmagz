@@ -1,5 +1,5 @@
 <?php
-$crypt = "qwrqrdsgsdklcjkbkcjbkcf";
+//require_once "handler/variables.php";
 
 if($_COOKIE['a'] != md5($crypt)) {
   header("Location: login.php");
@@ -19,7 +19,7 @@ if($_COOKIE['a'] != md5($crypt)) {
         <span class="auth-user">Вы вошли как, <b><?=$log_user?></b></span>
         <!--<img class="user__avatar" src="" width="35" height="35">-->
         <span class="ip-user">Client IP: <b><?=$_SERVER['REMOTE_ADDR']?></b></span>
-        <a class="get-site" href="../index.php">На сайт</a>
+        <a class="get-site" href="../index.php" target="_blank" title="Откроется в новой вкладке">На сайт</a>
         <a class="logout" href="logout.php">Выход</a>
       </div>
       <div class="cp-manage-panel">

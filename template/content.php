@@ -10,6 +10,7 @@
                 load_feed($db);
               } else if(1) {
                 load_post_body($db);
+                load_single_page();
               } else {
                 echo "Возникли проблемы при загрузке статьи";
               }

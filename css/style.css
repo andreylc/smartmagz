@@ -107,9 +107,9 @@ body {
 .main-menu__link {
   display: block;
   padding: 12px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 25px;
   text-decoration: none;
   color: #000000;
   border-bottom: 2px solid #FFFFFF;
@@ -254,10 +254,16 @@ body {
 
 .post__full-text {
   font-family: 'PT Serif', serif;
-  width: 100%;
-  min-height: 300px;
+  margin-bottom: 15px;
+  min-height: 100px;
   font-size: 16px;
   line-height: 23px; }
+
+.social-share {
+  margin-bottom: 30px; }
+
+.comments {
+  margin-bottom: 50px; }
 
 .sidebar {
   width: 250px;
@@ -436,6 +442,8 @@ footer {
     width: 210px; }
     .post-container:last-of-type {
       flex-grow: 1; }
+  .view-post-container {
+    width: 100%; }
   .footer-block {
     padding: 10px; }
   .social__title {

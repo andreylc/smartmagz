@@ -13,6 +13,14 @@ echo '" width="100%">';
       <div class="post__category"><a class="post__category-link" href="#category" title="В разделе">Новости</a></div>
     </div>
     <div class="post__full-text"><?=$row['full_text']?></div>
+    <div class="social-share">
+      <div id="vk_like"></div>
+        <script type="text/javascript">VK.Widgets.Like("vk_like", {type: "button", height: 24});</script>
+      </div>
+      <div class="comments">
+        <div id="vk_comments"></div>
+          <script type="text/javascript">VK.Widgets.Comments("vk_comments", {limit: 10, width: "", attach: "*"});</script>
+      </div>
   </div>
 </div>
 

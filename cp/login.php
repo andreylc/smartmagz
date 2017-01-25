@@ -1,5 +1,5 @@
 <?php
-$crypt = "qwrqrdsgsdklcjkbkcjbkcf";
+require "handler/variables.php";
   session_start();
   if($_COOKIE['a'] == md5($crypt)){
   header("Location: manage.php");

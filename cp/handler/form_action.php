@@ -1,8 +1,10 @@
 <?php
- header("Location: manage.php");
+ header("Location: ../manage.php");
 
+if($_POST['isset'] == "1"){
 
-require_once "../config.php";
+require_once "../../config.php";
+
 
 $title = trim($_POST['title']);
 $title = strip_tags($title);
@@ -29,6 +31,7 @@ $full_text = strip_tags($full_text);
 $full_text = htmlspecialchars($full_text);
 $full_text = mysql_escape_string($full_text);
 
+
 $date = date("Y-m-d");
 
 $query = "INSERT INTO `posts` (`id`, `post_date`, `img`, `title`, `post_category`, `post_preview`, `full_text`, `post_views`) 
@@ -42,5 +45,4 @@ $result = mysqli_query($db, $query);
     header("Location: ../manage.php?section=all_post&notice=error");
   }
 
-
-
+}

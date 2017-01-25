@@ -13,7 +13,7 @@ $password = mysql_escape_string($password);
 
 
 require_once "../config.php";
-$crypt = "qwrqrdsgsdklcjkbkcjbkcf";
+require_once "handler/variables.php";
 
 session_start();
 function logs($name) {
@@ -37,7 +37,7 @@ $query = "SELECT `password`, `is_admin` FROM `users` WHERE `name` = '$username'"
 
 if($row['password'] == $password) {
   if($row['is_admin']){
-    setcookie('a', md5($crypt));
+    setcookie('a', md5($crypt),time()+900 , "/");
     $_SESSION['user'] = $username;
     logs($username);
     header("Location: manage.php");

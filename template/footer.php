@@ -2,12 +2,12 @@
         <div class="layout flex">
           <div class="footer-block">
             <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#1">Обмен</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#2">Поддержка</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#3">Инструкции</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#4">Сервис</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#4">Помощь</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#4">О нас</a></li>  
+              <li class="footer-menu__item"><a class="footer-menu__link" href="index.php">Новости</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="view_post?page=instruction">Инструкции</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="view_post?page=recievers">Ресиверы</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="view_post?page=activation">Активация</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="view_post?page=disqus">Обсуждения</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="view_post?page=help">Помощь</a></li>
             </ul>
           </div>
           <div class="footer-block mq-bg">
@@ -21,10 +21,10 @@
           </div>
           <div class="footer-block footer-block--middle">
             <div class="info-block">На сайте частично представлены материалы с ресурсов tricolor.tv и gs.ru.<br>Есть вопрос? Задайте его 
-              <a href="#">тут</a></div>
+              <a href="view_post?page=disqus">тут</a></div>
             <div class="feedback">
-              <a class="feedback__link" href="#">О сайте</a>
-              <a class="feedback__link" href="#">Обратная связь</a>
+              <a class="feedback__link" href="view_post?page=about">О сайте</a>
+              <a class="feedback__link" href="view_post?page=feedback">Обратная связь</a>
             </div>
           </div>
         </div>
