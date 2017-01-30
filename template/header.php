@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script>
     <script type="text/javascript">VK.init({apiId: 5840638, onlyWidgets: true});</script>
-    <title>Триколор ТВ - Инфо</title>
+    <title>ТриколорТВ Инфо<?=' | '.$title ?></title>
   </head>
   <body>
     <div class="wrapper"> <!--wrapper start-->
@@ -31,11 +31,11 @@
           <nav class="top-nav height-none">
             <ul class="main-menu">
               <li class="main-menu__item"><a class="main-menu__link" href="index.php">Новости</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=instruction">Инструкции</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=recievers">Ресиверы</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=activations">Активация</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=disqus">Обсуждения</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="view_post?page=help">Помощь</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post.php?page=instruction">Инструкции</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post.php?page=reciever">Ресиверы</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post.php?page=activation">Активация</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post.php?page=disqus">Обсуждения</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="view_post.php?page=help">Помощь</a></li>
               <?php
                 require "cp/handler/variables.php";
                 if($_COOKIE['a'] == md5($crypt)) {

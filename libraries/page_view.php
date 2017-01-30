@@ -19,6 +19,7 @@ function load_feed($db){
   $query = "SELECT * FROM `posts` ORDER BY `post_date` DESC";
   $result = mysqli_query($db, $query);
   $row = mysqli_fetch_assoc($result);
+  $title = "Главная";
   do
     {
       include "template/feed.php";
@@ -31,22 +32,24 @@ function load_post_body($db) {
   $query = "SELECT * FROM `posts` WHERE `id` = ".$_GET['id'];
   $result = mysqli_query($db, $query);
   $row = mysqli_fetch_assoc($result);
+  $title = $row['title'];
   if(file_exists("template/post_content.php")){
     require_once "template/post_content.php";
     mysqli_close($db);
   };
 };
 
-function load_single_page() {
+function load_single_page(){
+  $title = "Главная";
   switch($_GET['page']){
-        case 'instruction': 
+        case 'instruction':
              include 'includes/instruction.php';
               break;
-        case 'recievers': 
-             include 'includes/recievers.php';
+        case 'reciever': 
+             include 'includes/reciever.php';
               break;
-        case 'activations': 
-             include 'includes/activations.php';
+        case 'activation': 
+             include 'includes/activation.php';
               break;
         case 'disqus': 
              include 'includes/disqus.php';
@@ -60,7 +63,7 @@ function load_single_page() {
         case 'about': 
              include 'includes/about.php';
               break;                             
-        default: include 'index.php';
-  }
-}
+        default: include '/';
+  };
+};
 

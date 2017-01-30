@@ -8,8 +8,9 @@
             <?php
               if(defined("INDEX")){
                 load_feed($db);
-              } else if(1) {
+              } else if($_GET['id']) {
                 load_post_body($db);
+              } else if($_GET['page']){
                 load_single_page();
               } else {
                 echo "Возникли проблемы при загрузке статьи";

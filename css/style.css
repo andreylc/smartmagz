@@ -342,9 +342,9 @@ footer {
     display: block; }
   .feed, .sidebar {
     width: auto;
-    padding: 20px; }
+    padding: 5px; }
   .logo-container {
-    padding: 0 20px; }
+    padding: 0 5px; }
   .logo__box {
     left: 10px;
     top: 8px; }
