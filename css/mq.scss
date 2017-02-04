@@ -120,6 +120,10 @@
     padding: 10px;
   }
 
+  .footer-menu__link {
+    font-size: 18px;
+  }
+
   .social__title {
     text-align: left;
   }
@@ -139,6 +143,7 @@
   }
 
   .height-none {
+    position: relative;
     max-height: 0;
     z-index: -9999;
   }

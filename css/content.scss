@@ -47,8 +47,15 @@
     }
 }
 
-.post-image {
+//.post-image {
   //margin-bottom: 10px;
+//}
+
+.post-image img {
+  transition: all 0.1s ease;
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
 .post-body {
@@ -63,6 +70,7 @@
   color: #000025;
   font-weight: 400;
   margin: 10px 0;
+  transition: all 0.5s ease;
 }
 
 .post__meta {

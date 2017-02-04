@@ -150,6 +150,11 @@ body {
   .post-container:last-of-type {
     flex-grow: 1; }
 
+.post-image img {
+  transition: all 0.1s ease; }
+  .post-image img:hover {
+    transform: scale(1.01); }
+
 .post-body {
   padding: 0 10px; }
 
@@ -160,7 +165,8 @@ body {
   margin-bottom: 5px;
   color: #000025;
   font-weight: 400;
-  margin: 10px 0; }
+  margin: 10px 0;
+  transition: all 0.5s ease; }
 
 .post__meta {
   font-family: 'PT Serif', serif;
@@ -268,11 +274,59 @@ body {
 .sidebar {
   width: 250px;
   padding: 20px;
-  box-shadow: 0px 0px 3px #E0E0E0; }
+  box-shadow: 0px 0px 3px #E0E0E0;
+  margin-bottom: 20px; }
+
+.aside-block {
+  margin-bottom: 50px; }
+
+.aside-block__title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px; }
+
+.popular__item {
+  display: flex;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid transparent; }
+  .popular__item:hover {
+    border: 1px solid #E0E0E0;
+    color: #03A9F4; }
+
+.popular__img-box {
+  display: flex;
+  align-content: center;
+  width: 80px;
+  height: 50px;
+  margin-right: 10px; }
+
+.popular__img {
+  width: 100%; }
 
 .popular__title {
-  text-align: center;
-  font-weight: 400; }
+  font-size: 14px;
+  width: 70%; }
+
+.tags-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.tags__item {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #E0E0E0;
+  text-decoration: none;
+  margin-bottom: 5px;
+  color: #000000;
+  transition: 0.2s all ease; }
+  .tags__item:hover {
+    background-color: #03A9F4;
+    color: #FFFFFF;
+    border-color: #03A9F4; }
 
 footer {
   background: #03A9F4; }
@@ -282,7 +336,7 @@ footer {
   padding: 20px 0;
   min-height: 80px;
   color: #FFFFFF;
-  font-size: 13px; }
+  font-size: 14px; }
 
 .footer-block a {
   text-decoration: none;
@@ -302,7 +356,7 @@ footer {
 .footer-menu__link {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 13px; }
+  font-size: 14px; }
 
 .social__title {
   display: block;
@@ -404,6 +458,8 @@ footer {
     position: relative; }
   .footer-block {
     padding: 10px; }
+  .footer-menu__link {
+    font-size: 18px; }
   .social__title {
     text-align: left; }
   .mq-bg {
@@ -414,6 +470,7 @@ footer {
   .block {
     display: block; }
   .height-none {
+    position: relative;
     max-height: 0;
     z-index: -9999; }
   .elem--hide {
