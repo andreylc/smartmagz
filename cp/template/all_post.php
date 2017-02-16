@@ -17,6 +17,7 @@
             <td>Категория</td>
             <td>Превью</td>
             <td>Содержание</td>
+            <td>Ред.</td>
           </tr>
 <?php
           include "../config.php";
@@ -34,6 +35,8 @@
                   <td>'.$row['post_category'].'</td>
                   <td>'.$row['post_preview'].'</td>
                   <td>'.$row['full_text'].'</td>
+                  <td><a href="?section=edit_post&id='.$row['id'].'"';
+                  echo '>edit</a></td>
                 </tr>';
             }
             while($row = mysqli_fetch_array($result));

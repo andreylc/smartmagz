@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Rubik");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
 @import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=cyrillic");
 * {
   margin: 0;
@@ -152,14 +151,12 @@ body {
 
 .post-image img {
   transition: all 0.1s ease; }
-  .post-image img:hover {
-    transform: scale(1.01); }
 
 .post-body {
   padding: 0 10px; }
 
 .post__title {
-  font-family: 'Merriweather', serif;
+  font-family: 'Rubik', serif;
   font-size: 22px;
   line-height: 25px;
   margin-bottom: 5px;
@@ -200,7 +197,7 @@ body {
     content: "";
     display: inline-block;
     position: absolute;
-    top: 1px;
+    top: 0px;
     left: -25px;
     width: 18px;
     height: 18px;
@@ -227,6 +224,21 @@ body {
 
 .elem--hide {
   display: none; }
+
+.post__views {
+  display: inline-block;
+  margin-left: 35px;
+  position: relative;
+  font-size: 12px; }
+  .post__views:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -3px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/eye.svg") no-repeat 50%; }
 
 .read__more {
   position: absolute;
@@ -290,10 +302,8 @@ body {
   display: flex;
   margin-bottom: 10px;
   text-decoration: none;
-  color: #000000;
-  border: 1px solid transparent; }
+  color: #000000; }
   .popular__item:hover {
-    border: 1px solid #E0E0E0;
     color: #03A9F4; }
 
 .popular__img-box {

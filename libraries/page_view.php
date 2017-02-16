@@ -64,3 +64,10 @@ function load_single_page(){
   };
 };
 
+function counter($db){
+  if($_COOKIE['count'] != $_GET['id']) {
+    setcookie('count', $_GET['id'], time() + 86400, '/');
+    $query = "UPDATE `posts` SET `post_views` = `post_views` + 1 WHERE id=".$_GET['id'];
+    $result = mysqli_query($db, $query);
+  }
+}

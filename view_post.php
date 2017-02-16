@@ -13,4 +13,6 @@ if(file_exists("libraries/page_view.php")) {
     error("view_post");
   };
 
+  
+counter($db);
 load_page($db, header, content ,aside , footer);

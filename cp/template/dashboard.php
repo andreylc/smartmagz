@@ -37,7 +37,10 @@ if($_COOKIE['a'] != md5($crypt)) {
                 break;
             case 'add_post': 
               include 'add_post.php';
-                break;                
+                break;
+            case 'edit_post': 
+              include 'edit_post.php';
+                break;                    
             default: include 'all_post.php';
           }
         ?>
