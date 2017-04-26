@@ -1,2 +1,2 @@
-# tricolor
-create tricolor info portal
+# Smart Magazine
+create hi-tech blog...
