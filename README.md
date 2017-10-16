@@ -1,2 +1,2 @@
 # Smart Magazine
-create hi-tech blog...
+Блог на PHP
